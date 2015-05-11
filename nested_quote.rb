@@ -4,6 +4,7 @@ class Gdk::NestedQuote < Gdk::SubParts
   regist
 
   TWEET_URL = [ %r[\Ahttps?://twitter.com/(?:#!/)?(?<screen_name>[a-zA-Z0-9_]+)/status(?:es)?/(?<id>\d+)(?:\?.*)?\Z],
+                %r[\Ahttps?://twtr.jp/(?:#!/)?(?<screen_name>[a-zA-Z0-9_]+)/status(?:es)?/(?<id>\d+)(?:\?.*)?\Z],
                 %r[\Ahttp://favstar\.fm/users/(?<screen_name>[a-zA-Z0-9_]+)/status/(?<id>\d+)],
                 %r[\Ahttp://aclog\.koba789\.com/i/(?<id>\d+)]].freeze
 
